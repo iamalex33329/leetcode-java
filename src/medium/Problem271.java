@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-class Solution {
+public class Problem271 {
 
     public String encode(List<String> strs) {
         StringBuilder sb = new StringBuilder();
@@ -26,5 +26,3 @@ class Solution {
         return result;
     }
 }
-
-public class Problem271 { }
