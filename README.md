@@ -8,5 +8,5 @@ This repository contains my solutions to [LeetCode](https://leetcode.com/) probl
 |:----------:|:---------------:|
 |    Easy    |       87        |
 |   Medium   |       98        |
-|    Hard    |        9        |
-| **Total**  |     **194**     |
+|    Hard    |       10        |
+| **Total**  |     **195**     |
