@@ -6,26 +6,29 @@ import java.util.List;
 
 public class Problem731 {
 
-    private List<int[]> calendar;
-    private List<int[]> overlaps;
+    private static class MyCalendarTwo {
 
-    public Problem731() {
-        calendar = new ArrayList<>();
-        overlaps = new ArrayList<>();
-    }
+        private List<int[]> calendar;
+        private List<int[]> overlaps;
 
-    public boolean book(int start, int end) {
-        for (int[] overlap : overlaps) {
-            if (start < overlap[1] && end > overlap[0]) return false;
+        public MyCalendarTwo() {
+            calendar = new ArrayList<>();
+            overlaps = new ArrayList<>();
         }
 
-        for (int[] event : calendar) {
-            if (start < event[1] && end > event[0]) {
-                overlaps.add(new int[]{Math.max(start, event[0]), Math.min(end, event[1])});
+        public boolean book(int start, int end) {
+            for (int[] overlap : overlaps) {
+                if (start < overlap[1] && end > overlap[0]) return false;
             }
-        }
 
-        calendar.add(new int[]{start, end});
-        return true;
+            for (int[] event : calendar) {
+                if (start < event[1] && end > event[0]) {
+                    overlaps.add(new int[]{Math.max(start, event[0]), Math.min(end, event[1])});
+                }
+            }
+
+            calendar.add(new int[]{start, end});
+            return true;
+        }
     }
 }
