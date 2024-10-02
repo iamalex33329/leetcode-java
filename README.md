@@ -6,7 +6,7 @@ This repository contains my solutions to [LeetCode](https://leetcode.com/) probl
 
 | Difficulty | Solved Problems |
 |:----------:|:---------------:|
-|    Easy    |       90        |
+|    Easy    |       91        |
 |   Medium   |       105       |
 |    Hard    |       11        |
-| **Total**  |     **206**     |
+| **Total**  |     **207**     |
